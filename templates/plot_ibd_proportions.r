@@ -122,7 +122,7 @@ plt_ibdprop_over_interval <- function(highlight.reg=NULL) {
 
 chrom <- unique(my_ibd\$chr)
 
-if(chrom == "Pf3D7_02_v3") {
+if(chrom == "Pf3D7_02_v3") { #pfsa1 and pfsa2
   highlight.reg <- data.frame(
     name = c("ACS8", "PF3D7_0220300 (Plasmodium exported protein, unknown function)"),
     chr = c("Pf3D7_02_v3","Pf3D7_02_v3"),
@@ -136,7 +136,7 @@ if(chrom == "Pf3D7_02_v3") {
   plt_ibdprop_over_interval(
     highlight.reg = annotation
   )
-} else if(chrom == "Pf3D7_04_v3") {
+} else if(chrom == "Pf3D7_04_v3") { #pfsa4
   highlight.reg <- data.frame(
     name = "FIKK4.2", 
     chr = "Pf3D7_04_v3", 
@@ -150,7 +150,7 @@ if(chrom == "Pf3D7_02_v3") {
   plt_ibdprop_over_interval(
     highlight.reg = annotation
   )
-} else if(chrom == "Pf3D7_11_v3") {
+} else if(chrom == "Pf3D7_11_v3") { # pfsa3
   highlight.reg <- data.frame(
     name = "PF3D7_1127000 (protein phosphatase, putative)",
     chr = "Pf3D7_11_v3",
