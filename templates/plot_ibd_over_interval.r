@@ -5,13 +5,14 @@ require(data.table)
 require(isoRelate)
 require(moimix)
 
-pedfile <- "${ped}" #"ghana_pfsa4_Pf3D7_04_v3_1090896-1148289.ped" 
-mapfile <- "${map}" #"ghana_pfsa4_Pf3D7_04_v3_1090896-1148289.map"
+pedfile <- "${ped}"
+mapfile <- "${map}"
 pedbase <- "${pedname}"
 
 my_ibd <- read.table(
   "${ibdseg}",
-  header = T
+  header = T,
+  as.is = T
 )
 
 ped <- read.table(

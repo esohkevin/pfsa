@@ -9,7 +9,8 @@ pedbase <- "${pedname}"
 
 my_ibd <- read.table(
   "${ibdseg}",
-  header = T
+  header = T,
+  as.is = T
 )
 
 pops <- unique(my_ibd\$fid1)
@@ -19,7 +20,8 @@ if(length(pops) > 1) {
 
   my_proportion <- read.table(
     "${ibdpropwithstrat}",
-    header = T
+    header = T,
+    as.is = T
   )
 
   png(
@@ -53,7 +55,8 @@ if(length(pops) > 1) {
 
   my_proportion <- read.table(
     "${ibdprop}",
-    header = T
+    header = T,
+    as.is = T
   )
 
   png(

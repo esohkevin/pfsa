@@ -11,7 +11,8 @@ pedbase <- "${pedname}"
 
 my_ibd <- read.table(
   "${ibdseg}",
-  header = T
+  header = T,
+  as.is = T
 )
 
 ped <- read.table(
